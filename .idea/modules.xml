@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/DecagonLabs/DecagonLabs.iml" filepath="$PROJECT_DIR$/DecagonLabs/DecagonLabs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HeadFirst/HeadFirst.iml" filepath="$PROJECT_DIR$/HeadFirst/HeadFirst.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hyperskill/Hyperskill.iml" filepath="$PROJECT_DIR$/Hyperskill/Hyperskill.iml" />
       <module fileurl="file://$PROJECT_DIR$/testTwo.iml" filepath="$PROJECT_DIR$/testTwo.iml" />
     </modules>
   </component>
