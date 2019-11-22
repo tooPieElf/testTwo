@@ -8,4 +8,11 @@ public class Department {
   ArrayList <Lecturer> lecturers;
   ArrayList <Courses> courses;
 
+
+  public Department(String title) {
+    this.title = title;
+    this.students = new ArrayList<Student>();
+    this.lecturers = new ArrayList<Lecturer>();
+    this.courses = new ArrayList<Courses>();
+  }
 }

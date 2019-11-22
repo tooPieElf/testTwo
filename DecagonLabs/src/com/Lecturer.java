@@ -3,18 +3,18 @@ import java.util.ArrayList;
 
 public class Lecturer extends Person implements Info,Level{
 
-  String StaffNo;
+  String staffNo;
   ArrayList <Courses> courses;
 
   public Lecturer(String name, String gender, String nationality, String dateOfBirth,
       String title, String staffNo, ArrayList<Courses> courses) {
     super(name, gender, nationality, dateOfBirth, title);
-    StaffNo = staffNo;
+    this.staffNo = staffNo;
     this.courses = courses;
   }
 
   public String getStaffNo() {
-    return StaffNo;
+    return staffNo;
   }
 
   public ArrayList<Courses> getCourses() {
@@ -22,7 +22,7 @@ public class Lecturer extends Person implements Info,Level{
   }
 
   public void setStaffNo(String staffNo) {
-    StaffNo = staffNo;
+    staffNo = staffNo;
   }
 
   public void setCourses(ArrayList<Courses> courses) {
@@ -31,12 +31,16 @@ public class Lecturer extends Person implements Info,Level{
 
   @Override
   public void bio() {
-    System.out.println("bio here");
+    System.out.println("Name: "+this.getName() +
+                       "Gender "+this.getGender() +
+                       "Nationality "+this.getNationality()+
+                        "Title " + this.getTitle());
   }
 
   @Override
-  public String details() {
-    return null;
+  public void details() {
+    bio();
+    System.out.println("courses :" +this.courses );
   }
 
   @Override
@@ -52,5 +56,12 @@ public class Lecturer extends Person implements Info,Level{
   @Override
   public int level() {
     return 0;
+  }
+
+  public String toString() {
+    String s = "";
+    s += "name :"+this.getName()+'\n' + "staffno : " +this.staffNo+'\n' + "gender : " + this.getGender()+'\n' +"Nationality :"+this.getNationality();
+    return s;
+
   }
 }

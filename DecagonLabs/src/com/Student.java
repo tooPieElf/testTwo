@@ -3,8 +3,8 @@ package com;
 import java.util.ArrayList;
 
 public class Student  extends Person implements Level,Info{
-  ArrayList<Courses> courses;
-  String MatricNo;
+  private ArrayList<Courses> courses;
+  private String matricNo;
 
 
 
@@ -14,7 +14,7 @@ public class Student  extends Person implements Level,Info{
       ArrayList<Courses> courses, String matricNo) {
     super(name, gender, nationality, dateOfBirth);
     this.courses = courses;
-    MatricNo = matricNo;
+    this.matricNo = matricNo;
   }
 
   public void setCourses(ArrayList<Courses> courses) {
@@ -22,7 +22,7 @@ public class Student  extends Person implements Level,Info{
   }
 
   public void setMatricNo(String matricNo) {
-    MatricNo = matricNo;
+    this.matricNo = matricNo;
   }
 
   public ArrayList<Courses> getCourses() {
@@ -30,7 +30,7 @@ public class Student  extends Person implements Level,Info{
   }
 
   public String getMatricNo() {
-    return MatricNo;
+    return this.matricNo;
   }
 
 
@@ -40,8 +40,8 @@ public class Student  extends Person implements Level,Info{
   }
 
   @Override
-  public String details() {
-    return null;
+  public void details() {
+
   }
 
   @Override
